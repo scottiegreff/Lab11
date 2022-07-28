@@ -7,8 +7,9 @@ import java.util.Random;
 
 public class Client implements Protocol, Runnable {
 
-//    public static void main(String[] args) throws IOException {
-
+    public static void main(String[] args) throws IOException {
+        //socket, 
+    }
 
     @Override
     public void run() {
@@ -29,5 +30,5 @@ public class Client implements Protocol, Runnable {
             throw new RuntimeException(e);
         }
     }
-
 }
+

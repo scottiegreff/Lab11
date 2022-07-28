@@ -8,7 +8,9 @@ import java.util.Random;
 public class Client implements Protocol, Runnable {
 
     public static void main(String[] args) throws IOException {
-        //socket, 
+        Socket clientSocket = new Socket("localhost", Protocol.PORT);
+        DataInputStream in = new DataInputStream(client.getInputStream);
+        DataOutputStream out = new DataOutputStream(client.getOutputStream);
     }
 
     @Override

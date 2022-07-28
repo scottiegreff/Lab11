@@ -20,10 +20,10 @@ public class Client implements Protocol, Runnable {
             Socket client = new Socket("localhost", Protocol.PORT);
             DataInputStream in = new DataInputStream(client.getInputStream());
             DataOutputStream out = new DataOutputStream(client.getOutputStream());
-            int randNum;
             Random rand = new Random();
-            randNum = rand.ints(100, 255).findFirst().getAsInt();
-            Thread.sleep(randNum);
+            int delayMilliS = rand.ints(100, 255).findFirst().getAsInt();
+            Thread.sleep(delayMilliS);
+            
 
         } catch (IOException e) {
             throw new RuntimeException(e);
